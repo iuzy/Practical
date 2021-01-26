@@ -19,10 +19,10 @@ public class Practical {
 
         if (a > b) {
             System.out.println("The biggest is: " + a + ", the small one: " + b);
-        } if (a < b) {
-            System.out.println("TThe smallest is: " + a + ", the big one: " + b);
+        } else if (a < b) {
+            System.out.println("The biggest is: " + b + ", the small one: " + a);
         } else {
-            System.out.println("They look like the same!"); //fixme parādās vienmēr pie negatīviem!!!
+            System.out.println("They look like the same!");
         }
 
         //Check whether they even or odd numbers
@@ -37,28 +37,8 @@ public class Practical {
 
         //Check if the numbers are more or less than 100
 
-        if (a < 110) {
-            System.out.println(a + " is less than 100");
-        } else {
-            System.out.println(a + " is not less than 100");
-        }
-
-        if (b < 100) {
-            System.out.println(b + " is less than 100");
-        } else {
-            System.out.println(b + " is not less than 100");
-        }
-
-
-
-
-/*
-
-Kā savienot abus? Ex. "There are no odd/even numbers"
-● Verify if there are any variables which are odd (uneven). Print out information in the console.
-● Verify if there are any variables which are even. Print out information in the console.
-
- */
+        System.out.println("Number " +"'"+ a + "'" + (a < 100 ? " is less than 100":" is equal or more than 100"));
+        System.out.println("Number " +"'"+ b + "'" + (b < 100 ? " is less than 100":" is equal or more than 100"));
 
     }
 }
